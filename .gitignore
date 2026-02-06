@@ -140,7 +140,6 @@ Desktop.ini
 *.swo
 
 # Data files (optional - remove if you want to track your data)
-*.csv
 *.xlsx
 *.json
 *.parquet
