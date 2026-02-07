@@ -16,10 +16,11 @@ This dashboard provides comprehensive analysis of OLA ride operations including:
 
 ## Key Features
 
-### 📊 Interactive Filters
-- Filter data by vehicle type (Prime Sedan, Bike, Prime SUV, Auto, etc.)
-- Filter by booking status (Trip Completed, Cancelled by Driver/Customer)
-- Real-time data updates based on filter selections
+### 📊 Smart Analysis Filters
+- **Analysis Mode Selector**: Choose to analyze by Vehicle Type, Pickup Location, Drop Location, Customer ID, Payment Method, or view All Data
+- **Multi-Value Selection**: Select specific values within your chosen analysis dimension
+- **One-Click Analysis**: Simple, intuitive filtering that makes data exploration effortless
+- **Real-time Updates**: All visualizations and KPIs update automatically based on your analysis focus
 
 ### 📈 Rich Visualizations
 - **Revenue by Vehicle Type**: Bar chart showing earnings across different vehicle categories
@@ -40,9 +41,9 @@ This dashboard provides comprehensive analysis of OLA ride operations including:
 Visit [https://ola-dashboard.streamlit.app/](https://ola-dashboard.streamlit.app/) in your web browser.
 
 ### 2. **Apply Filters**
-- Use the sidebar to select specific vehicle types you want to analyze
-- Choose booking statuses to focus on successful rides or cancellations
-- Filters automatically update all visualizations and metrics
+- **Analysis Mode Selection**: Choose how you want to analyze the data (by Vehicle Type, Location, etc.) or select "All Data"
+- **Value Selection**: Multi-select specific values within your chosen analysis mode
+- **Instant Updates**: All charts and metrics update automatically based on your selection
 
 ### 3. **Analyze Key Metrics**
 - **Total Revenue**: Monitor overall earnings
