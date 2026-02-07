@@ -217,7 +217,7 @@ def main():
     
     # Fact measures: Booking Value, Ride Distance, Booking Status count
     total_revenue = filtered_df['Booking Value'].sum()
-    total_bookings = filtered_df['Booking Count'].sum()  # Using fact measure
+    total_bookings = len(filtered_df)  # Use len() as fallback for booking count
     success_rate = (len(filtered_df[filtered_df['Booking Status'] == 'Success']) / total_bookings * 100) if total_bookings > 0 else 0
     avg_distance = filtered_df['Ride Distance'].mean()
     
@@ -298,7 +298,7 @@ def main():
     with col3:
         st.subheader("📈 Daily Ride Trends")
         if not filtered_df.empty:
-            daily_rides = filtered_df.groupby('Date')['Booking Count'].sum().reset_index(name='Ride Count')
+            daily_rides = filtered_df.groupby('Date').size().reset_index(name='Ride Count')
             fig3 = px.line(
                 daily_rides,
                 x='Date',
@@ -315,7 +315,7 @@ def main():
     with col4:
         st.subheader("🕐 Hourly Demand Pattern")
         if not filtered_df.empty:
-            hourly_demand = filtered_df.groupby('Hour')['Booking Count'].sum().reset_index(name='Ride Count')
+            hourly_demand = filtered_df.groupby('Hour').size().reset_index(name='Ride Count')
             fig4 = px.bar(
                 hourly_demand,
                 x='Hour',
