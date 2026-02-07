@@ -1,6 +1,6 @@
-# OLA Bengaluru Operations Dashboard
+# OLA Operations Dashboard
 
-A comprehensive Streamlit dashboard for analyzing OLA ride-hailing data in Bengaluru. This interactive web application transforms raw ride data into actionable business insights through rich visualizations and real-time analytics.
+A comprehensive Streamlit dashboard for analyzing OLA ride-hailing data in. This interactive web application transforms raw ride data into actionable business insights through rich visualizations and real-time analytics.
 
 🔗 **Live Dashboard**: [https://ola-dashboard.streamlit.app/](https://ola-dashboard.streamlit.app/)
 
@@ -90,7 +90,7 @@ Visit [https://ola-dashboard.streamlit.app/](https://ola-dashboard.streamlit.app
 
 ## Dataset Information
 
-The dashboard analyzes OLA ride data from Bengaluru including:
+The dashboard analyzes OLA ride data from including:
 - Ride details (date, time, distance, duration)
 - Vehicle information (type, category)
 - Booking status (completed, cancelled)
